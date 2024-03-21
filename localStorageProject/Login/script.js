@@ -12,10 +12,10 @@ function login(){
     var nome = $("#nome").val();
     var senha = $("#senha").val();
 
-    if(nome && senha && nome === "leo" && senha === "natangostoso"){
+    if(nome && senha && nome === "Leo" && senha === "Jslixo"){
             const user = {
                 name: nome,
-                dataEntrada: new Date(),
+                dataEntrada: formatarData(new Date()),
                 id: Math.floor(Math.random() * 100000)
             }
             localStorage.setItem("usuario", JSON.stringify(user))
@@ -28,4 +28,12 @@ function login(){
 const fecharModal = () => document.getElementById('error-modal').style.display = "none"
 
 
-
+function formatarData(item){
+    var options = {
+        month: "numeric",
+        day: "numeric",
+        hour: "numeric",
+        minute: "numeric",
+    }
+    return item.toLocaleString("pt-BR", options)
+}

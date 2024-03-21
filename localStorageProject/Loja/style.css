@@ -13,7 +13,20 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+.idPerfil{
+  display: flex;
+  gap: 5px;
+}
+.wrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  padding: 5%;
+}
 
 .esc1{
 
@@ -186,4 +199,7 @@ img {
   }
 .price{
     color: #000;
+}
+.btn-group{
+
 }
