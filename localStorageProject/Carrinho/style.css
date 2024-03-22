@@ -15,5 +15,21 @@ body{
 .btn-group{
         margin-top: 20px;
     }
-    
-
+#pedido{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: green;
+  color: white;
+  font-size: 1rem;
+}    
+button{
+  opacity: 0.8;
+}
+button:hover{
+  cursor: pointer;
+  opacity: 1;
+}
